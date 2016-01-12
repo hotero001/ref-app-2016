@@ -125,46 +125,46 @@ class JournalListViewController:
     
     cell.dateLabel.text = surfJournalEntry.stringForDate()
     
-    if let rating = surfJournalEntry.rating?.intValue {
-      switch rating {
-      case 1:
-        cell.starOneFilledImageView.hidden = false
-        cell.starTwoFilledImageView.hidden = true
-        cell.starThreeFilledImageView.hidden = true
-        cell.starFourFilledImageView.hidden = true
-        cell.starFiveFilledImageView.hidden = true
-      case 2:
-        cell.starOneFilledImageView.hidden = false
-        cell.starTwoFilledImageView.hidden = false
-        cell.starThreeFilledImageView.hidden = true
-        cell.starFourFilledImageView.hidden = true
-        cell.starFiveFilledImageView.hidden = true
-      case 3:
-        cell.starOneFilledImageView.hidden = false
-        cell.starTwoFilledImageView.hidden = false
-        cell.starThreeFilledImageView.hidden = false
-        cell.starFourFilledImageView.hidden = true
-        cell.starFiveFilledImageView.hidden = true
-      case 4:
-        cell.starOneFilledImageView.hidden = false
-        cell.starTwoFilledImageView.hidden = false
-        cell.starThreeFilledImageView.hidden = false
-        cell.starFourFilledImageView.hidden = false
-        cell.starFiveFilledImageView.hidden = true
-      case 5:
-        cell.starOneFilledImageView.hidden = false
-        cell.starTwoFilledImageView.hidden = false
-        cell.starThreeFilledImageView.hidden = false
-        cell.starFourFilledImageView.hidden = false
-        cell.starFiveFilledImageView.hidden = false
-      default :
-        cell.starOneFilledImageView.hidden = true
-        cell.starTwoFilledImageView.hidden = true
-        cell.starThreeFilledImageView.hidden = true
-        cell.starFourFilledImageView.hidden = true
-        cell.starFiveFilledImageView.hidden = true
-      }
-    }
+    //if let rating = surfJournalEntry.rating?.intValue {
+    //  switch rating {
+    //  case 1:
+    //    cell.starOneFilledImageView.hidden = false
+    //    cell.starTwoFilledImageView.hidden = true
+    //    cell.starThreeFilledImageView.hidden = true
+    //    cell.starFourFilledImageView.hidden = true
+    //    cell.starFiveFilledImageView.hidden = true
+    //  case 2:
+    //    cell.starOneFilledImageView.hidden = false
+    //    cell.starTwoFilledImageView.hidden = false
+    //    cell.starThreeFilledImageView.hidden = true
+    //    cell.starFourFilledImageView.hidden = true
+    //    cell.starFiveFilledImageView.hidden = true
+    //  case 3:
+    //    cell.starOneFilledImageView.hidden = false
+    //    cell.starTwoFilledImageView.hidden = false
+    //    cell.starThreeFilledImageView.hidden = false
+    //    cell.starFourFilledImageView.hidden = true
+    //    cell.starFiveFilledImageView.hidden = true
+    //  case 4:
+    //    cell.starOneFilledImageView.hidden = false
+    //    cell.starTwoFilledImageView.hidden = false
+    //    cell.starThreeFilledImageView.hidden = false
+    //    cell.starFourFilledImageView.hidden = false
+    //    cell.starFiveFilledImageView.hidden = true
+    //  case 5:
+    //    cell.starOneFilledImageView.hidden = false
+    //    cell.starTwoFilledImageView.hidden = false
+    //    cell.starThreeFilledImageView.hidden = false
+    //    cell.starFourFilledImageView.hidden = false
+    //    cell.starFiveFilledImageView.hidden = false
+    //  default :
+    //    cell.starOneFilledImageView.hidden = true
+    //    cell.starTwoFilledImageView.hidden = true
+    //    cell.starThreeFilledImageView.hidden = true
+    //    cell.starFourFilledImageView.hidden = true
+    //    cell.starFiveFilledImageView.hidden = true
+    //  }
+    //}
   }
 
   override func tableView(tableView: UITableView,

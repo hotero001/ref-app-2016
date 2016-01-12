@@ -56,8 +56,8 @@ class JournalEntryViewController: UITableViewController {
   @IBOutlet weak var timerLabel: UILabel!
   
   
-  @IBOutlet weak var ratingSegmentedControl:
-    UISegmentedControl!
+  //@IBOutlet weak var ratingSegmentedControl:
+  //  UISegmentedControl!
   
   //additional labels for the colon and seconds labels in the timer
   @IBOutlet weak var colonForTimerLabel: UILabel!
@@ -161,12 +161,12 @@ class JournalEntryViewController: UITableViewController {
       }
     }
     
-    if let segmentControl = ratingSegmentedControl {
-      if let rating = journalEntry.rating {
-        segmentControl.selectedSegmentIndex =
-          rating.integerValue - 1
-      }
-    }
+    //if let segmentControl = ratingSegmentedControl {
+    //  if let rating = journalEntry.rating {
+    //    segmentControl.selectedSegmentIndex =
+    //      rating.integerValue - 1
+    //  }
+    //}
   }
   
   func updateJournalEntry() {
@@ -181,9 +181,10 @@ class JournalEntryViewController: UITableViewController {
       //added this line
       entry.homeTeam = homeTeamTextField.text
       //ended here
-      entry.rating =
-        NSNumber(integer:
-          ratingSegmentedControl.selectedSegmentIndex + 1)
+      //entry.rating =
+      //  NSNumber(integer:
+      //    ratingSegmentedControl.selectedSegmentIndex + 1)
+      
       //added this line to save the away team name
       entry.awayTeam = awayTeamTextField.text
       //added the three lines below to save the home color, away color, and game start

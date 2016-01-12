@@ -30,7 +30,7 @@ class JournalEntry: NSManagedObject {
   @NSManaged var period: String?
   @NSManaged var wind: String?
   @NSManaged var location: String?
-  @NSManaged var rating: NSNumber?
+  //@NSManaged var rating: NSNumber?
   //added this NSManaged var for the home team name
   @NSManaged var homeTeam: String?
   //ended here
@@ -58,15 +58,15 @@ class JournalEntry: NSManagedObject {
     let coalescedPeriod = period ?? ""
     let coalescedWind = wind ?? ""
     let coalescedLocation = location ?? ""
-    var coalescedRating:String
-    if let rating = rating?.intValue {
-      coalescedRating = String(rating)
-    } else {
-      coalescedRating = ""
-    }
+    //var coalescedRating:String
+    //if let rating = rating?.intValue {
+    //  coalescedRating = String(rating)
+    //} else {
+    //  coalescedRating = ""
+    //}
     
     return "\(stringForDate()),\(coalescedHeight)," +
       "\(coalescedPeriod),\(coalescedWind)," +
-        "\(coalescedLocation),\(coalescedRating)\n"
+        "\(coalescedLocation)\n"
   }
 }
