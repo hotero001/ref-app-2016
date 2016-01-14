@@ -349,10 +349,16 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jms-Qo-qIs">
                                                     <rect key="frame" x="251" y="45" width="55" height="30"/>
                                                     <state key="normal" title="Submit"/>
+                                                    <connections>
+                                                        <action selector="addHomeYellow:" destination="ECS-Eq-hdI" eventType="touchUpInside" id="zn4-al-Uod"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozi-Ry-BoW">
                                                     <rect key="frame" x="248" y="83" width="61" height="30"/>
                                                     <state key="normal" title="Submit"/>
+                                                    <connections>
+                                                        <action selector="addAwayYellow:" destination="ECS-Eq-hdI" eventType="touchUpInside" id="yF4-Lp-aoF"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home Red Card:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgF-Jl-tUh">
                                                     <rect key="frame" x="3" y="125" width="126" height="21"/>
@@ -379,31 +385,31 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luR-lC-ety">
                                                     <rect key="frame" x="254" y="122" width="49" height="30"/>
                                                     <state key="normal" title="Submit"/>
+                                                    <connections>
+                                                        <action selector="addHomeRed:" destination="ECS-Eq-hdI" eventType="touchUpInside" id="fJp-oW-nmD"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-kg-NWL">
                                                     <rect key="frame" x="254" y="158" width="49" height="30"/>
                                                     <state key="normal" title="Submit"/>
+                                                    <connections>
+                                                        <action selector="addAwayRed:" destination="ECS-Eq-hdI" eventType="touchUpInside" id="V6e-5T-rAe"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73m-9w-14Y">
-                                                    <rect key="frame" x="8" y="246" width="42" height="21"/>
+                                                    <rect key="frame" x="8" y="246" width="156" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-79-j0I">
-                                                    <rect key="frame" x="58" y="246" width="42" height="21"/>
+                                                    <rect key="frame" x="4" y="299" width="128" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHt-gE-NfY">
-                                                    <rect key="frame" x="166" y="245" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCZ-Xg-vTC">
-                                                    <rect key="frame" x="216" y="246" width="42" height="21"/>
+                                                    <rect key="frame" x="166" y="245" width="137" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -416,6 +422,12 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Away Bookings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z02-fZ-ILv">
                                                     <rect key="frame" x="166" y="224" width="116" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCZ-Xg-vTC">
+                                                    <rect key="frame" x="190" y="298" width="130" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -448,15 +460,19 @@
                     <connections>
                         <outlet property="awayColor" destination="ZdT-Ar-YDb" id="1kH-yI-6rE"/>
                         <outlet property="awayRedLabel" destination="MCZ-Xg-vTC" id="JB0-Am-7vN"/>
+                        <outlet property="awayRedsTextField" destination="cMv-3v-CSt" id="LIR-No-iF7"/>
                         <outlet property="awayTeamTextField" destination="6NL-7i-UaO" id="rLm-gB-dOw"/>
                         <outlet property="awayYellowLabel" destination="IHt-gE-NfY" id="mU8-YL-Rz5"/>
+                        <outlet property="awayYellowsTextField" destination="XUo-dF-OKH" id="jpZ-z8-EMW"/>
                         <outlet property="colonForTimerLabel" destination="Zol-ie-S2L" id="FLW-aX-3yN"/>
                         <outlet property="gameStartTextField" destination="MVc-P9-jq2" id="yfo-aA-v0n"/>
                         <outlet property="heightTextField" destination="TYV-EA-kWd" id="7Qr-3T-J6e"/>
                         <outlet property="homeColor" destination="jnn-x8-e8X" id="qcu-b3-RRi"/>
                         <outlet property="homeRedLabel" destination="LaT-79-j0I" id="tgQ-WB-V8z"/>
+                        <outlet property="homeRedsTextField" destination="pdn-7Z-8oR" id="h6a-bS-Eh0"/>
                         <outlet property="homeTeamTextField" destination="4FB-2e-J0Z" id="bRa-jD-PRw"/>
                         <outlet property="homeYellowLabel" destination="73m-9w-14Y" id="PDD-Ae-f7g"/>
+                        <outlet property="homeYellowsTextField" destination="Vdc-EH-Nj1" id="eyc-T8-cIh"/>
                         <outlet property="locationTextField" destination="fiB-KQ-MI1" id="sW6-4h-kuY"/>
                         <outlet property="periodTextField" destination="E2O-I0-oRj" id="8wR-vv-VQ4"/>
                         <outlet property="resetButton" destination="tG9-yH-rUd" id="yrn-Fb-lnF"/>

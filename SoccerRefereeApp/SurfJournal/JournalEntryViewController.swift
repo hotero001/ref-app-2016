@@ -73,6 +73,12 @@ class JournalEntryViewController: UITableViewController {
   //labels to display away team player numbers with yellow and red cards
   @IBOutlet weak var awayYellowLabel: UILabel!
   @IBOutlet weak var awayRedLabel: UILabel!
+    
+  //text fields for the player bookings
+  @IBOutlet weak var homeYellowsTextField: UITextField!
+  @IBOutlet weak var awayYellowsTextField: UITextField!
+  @IBOutlet weak var homeRedsTextField: UITextField!
+  @IBOutlet weak var awayRedsTextField: UITextField!
   
   var journalEntry: JournalEntry! {
     didSet {
@@ -87,6 +93,12 @@ class JournalEntryViewController: UITableViewController {
   var counter:Int?
   var secondsCounter:Int?
   var timer = NSTimer()
+    
+  //arrays that contain strings for the players that are booked
+  var homeYellows = [String]()
+  var homeReds = [String]()
+  var awayYellows = [String]()
+  var awayReds = [String]()
   
   // MARK: View Lifecycle
   
@@ -97,6 +109,10 @@ class JournalEntryViewController: UITableViewController {
     colonForTimerLabel.text = ":"
     secondsForTimerLabel.text = "\(60)"
     secondsCounter = Int(60)
+    homeYellowLabel.text = "---"
+    homeRedLabel.text = "---"
+    awayYellowLabel.text = "---"
+    awayRedLabel.text = "---"
   }
   
   
@@ -256,6 +272,48 @@ class JournalEntryViewController: UITableViewController {
       var newTime = Int(periodTextField.text!)! - 1
       counter = Int(newTime)
       timerLabel.text = String(newTime)
+  }
+    
+  @IBAction func addHomeYellow(sender: AnyObject) {
+      if homeYellows.contains(homeYellowsTextField.text!){
+          if homeReds.contains(homeYellowsTextField.text!){
+          }else{
+              self.homeReds.append(homeYellowsTextField.text!)
+              homeRedLabel.text = "\(homeReds)"
+          }
+      }else{
+          self.homeYellows.append(homeYellowsTextField.text!)
+          homeYellowLabel.text = "\(Array(Set(homeYellows)))"
+      }
+  }
+  
+  @IBAction func addAwayYellow(sender: AnyObject) {
+    if awayYellows.contains(awayYellowsTextField.text!){
+        if awayReds.contains(awayYellowsTextField.text!){
+        }else{
+            self.awayReds.append(awayYellowsTextField.text!)
+            awayRedLabel.text = "\(awayReds)"
+        }
+    }else{
+        self.awayYellows.append(awayYellowsTextField.text!)
+        awayYellowLabel.text = "\(Array(Set(awayYellows)))"
+    }
+  }
+  
+  @IBAction func addHomeRed(sender: AnyObject) {
+      if homeReds.contains(homeRedsTextField.text!){
+      }else{
+          self.homeReds.append(homeRedsTextField.text!)
+          homeRedLabel.text = "\(homeReds)"
+      }
+  }
+    
+  @IBAction func addAwayRed(sender: AnyObject) {
+      if awayReds.contains(awayRedsTextField.text!){
+      }else{
+          self.awayReds.append(awayRedsTextField.text!)
+          awayRedLabel.text = "\(awayReds)"
+      }
   }
 }
 
