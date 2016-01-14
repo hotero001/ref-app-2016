@@ -36,4 +36,8 @@ class SurfEntryTableViewCell: UITableViewCell {
   @IBOutlet weak var starFourFilledImageView: UIImageView!
   @IBOutlet weak var starFiveFilledImageView: UIImageView!
 
+  //three labels for the home team, away team, and game start time
+  @IBOutlet weak var gameStartTextField: UILabel!
+  @IBOutlet weak var homeTeamTextField: UILabel!
+  @IBOutlet weak var awayTeamTextField: UILabel!
 }

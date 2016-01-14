@@ -66,7 +66,13 @@ class JournalEntryViewController: UITableViewController {
   //submit half time length button
   @IBOutlet weak var submitHalfLengthButton: UIButton!
     
-  //add yellow card label
+  //labels to display home team player numbers with yellow and red cards
+  @IBOutlet weak var homeYellowLabel: UILabel!
+  @IBOutlet weak var homeRedLabel: UILabel!
+    
+  //labels to display away team player numbers with yellow and red cards
+  @IBOutlet weak var awayYellowLabel: UILabel!
+  @IBOutlet weak var awayRedLabel: UILabel!
   
   var journalEntry: JournalEntry! {
     didSet {

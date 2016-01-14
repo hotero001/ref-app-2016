@@ -124,6 +124,9 @@ class JournalListViewController:
         as! JournalEntry
     
     cell.dateLabel.text = surfJournalEntry.stringForDate()
+    cell.gameStartTextField.text = surfJournalEntry.gameStart
+    cell.homeTeamTextField.text = surfJournalEntry.homeTeam
+    cell.awayTeamTextField.text = surfJournalEntry.awayTeam
     
     //if let rating = surfJournalEntry.rating?.intValue {
     //  switch rating {
