@@ -20,6 +20,7 @@
 		4AD2131619B257ED000CD6AB /* SurfJournalDatabase.sqlite-wal in Resources */ = {isa = PBXBuildFile; fileRef = 4AD2131319B253E0000CD6AB /* SurfJournalDatabase.sqlite-wal */; };
 		4ADEF5FE19AA73900005051C /* SurfEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADEF5FD19AA73900005051C /* SurfEntryTableViewCell.swift */; };
 		4ADEF60319AA78430005051C /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADEF60219AA78420005051C /* JournalEntry.swift */; };
+		C82EAB9E1C4B75D900F16D09 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82EAB9D1C4B75D900F16D09 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4ADEF5FD19AA73900005051C /* SurfEntryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfEntryTableViewCell.swift; sourceTree = "<group>"; };
 		4ADEF5FF19AA77FE0005051C /* SurfJournal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SurfJournal-Bridging-Header.h"; sourceTree = "<group>"; };
 		4ADEF60219AA78420005051C /* JournalEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; tabWidth = 2; };
+		C82EAB9D1C4B75D900F16D09 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		C8DD5D191C338173000A0CC7 /* SurfJournalModelv2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurfJournalModelv2.xcdatamodel; sourceTree = "<group>"; };
 		C8DD5D1A1C44B816000A0CC7 /* SurfJournalModelv3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurfJournalModelv3.xcdatamodel; sourceTree = "<group>"; };
 		C8DD5D1B1C44C2DE000A0CC7 /* SurfJournalModelv4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SurfJournalModelv4.xcdatamodel; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4A42A8721997F44300398605 /* Main.storyboard */,
+				C82EAB9D1C4B75D900F16D09 /* ScoreViewController.swift */,
 				4A42A86C1997F44300398605 /* AppDelegate.swift */,
 				4A32281419AA98E400355616 /* JournalListViewController.swift */,
 				4A32281219AA98A800355616 /* JournalEntryViewController.swift */,
@@ -258,6 +261,7 @@
 				4A32281319AA98A800355616 /* JournalEntryViewController.swift in Sources */,
 				4A42A86D1997F44300398605 /* AppDelegate.swift in Sources */,
 				4A42A88C1997F4FC00398605 /* CoreDataStack.swift in Sources */,
+				C82EAB9E1C4B75D900F16D09 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
