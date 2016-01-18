@@ -520,13 +520,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4z-Y8-8cX">
-                                <rect key="frame" x="80" y="171" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGH-0G-iLK">
-                                <rect key="frame" x="196" y="171" width="11" height="21"/>
+                                <rect key="frame" x="80" y="171" width="26" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -545,21 +539,49 @@
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5TT-bU-VrD">
                                 <rect key="frame" x="38" y="213" width="94" height="29"/>
+                                <connections>
+                                    <action selector="homeScoreStepper:" destination="efi-7J-LFe" eventType="valueChanged" id="hYd-Yo-2Lh"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="gEl-Pu-UhE">
                                 <rect key="frame" x="154" y="213" width="94" height="29"/>
+                                <connections>
+                                    <action selector="awayScoreStepper:" destination="efi-7J-LFe" eventType="valueChanged" id="t9I-dW-4m1"/>
+                                </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GI-Sr-NGS">
                                 <rect key="frame" x="50" y="269" width="190" height="30"/>
                                 <state key="normal" title="PRESS TO CHANGE SCORE"/>
+                                <connections>
+                                    <action selector="changeScore:" destination="efi-7J-LFe" eventType="touchUpInside" id="2hs-ba-YYE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-O0-oln">
-                                <rect key="frame" x="75" y="299" width="141" height="30"/>
+                                <rect key="frame" x="75" y="269" width="141" height="30"/>
                                 <state key="normal" title="PRESS WHEN DONE"/>
+                                <connections>
+                                    <action selector="doneChangingScore:" destination="efi-7J-LFe" eventType="touchUpInside" id="ael-WM-dBp"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGH-0G-iLK">
+                                <rect key="frame" x="195" y="170" width="20" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="awayScoreStepper" destination="gEl-Pu-UhE" id="0NI-qY-v32"/>
+                        <outlet property="awayTeamLabel" destination="yty-Tq-rFc" id="gSZ-cP-SV4"/>
+                        <outlet property="awayTeamScoreLabel" destination="TGH-0G-iLK" id="gaX-Dp-bPm"/>
+                        <outlet property="changeScoreButton" destination="4GI-Sr-NGS" id="3Fv-Ky-3tv"/>
+                        <outlet property="disableScoreChangeButton" destination="0oM-O0-oln" id="uNC-cZ-qPX"/>
+                        <outlet property="homeScoreStepper" destination="5TT-bU-VrD" id="OaO-oe-Ywr"/>
+                        <outlet property="homeTeamLabel" destination="qb9-1S-UCK" id="sBn-xG-7aR"/>
+                        <outlet property="homeTeamScoreLabel" destination="p4z-Y8-8cX" id="Czm-kv-VU3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZj-pg-owb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
