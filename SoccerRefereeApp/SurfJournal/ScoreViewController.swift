@@ -36,6 +36,10 @@ class ScoreViewController: UIViewController {
         
         disableScoreChangeButton.enabled = false
         disableScoreChangeButton.hidden = true
+        
+        //set the labels to the name of the home team and away team
+        homeTeamLabel.text = "home team"
+        awayTeamLabel.text = "away team"
     }
     
     @IBAction func doneChangingScore(sender: AnyObject) {
