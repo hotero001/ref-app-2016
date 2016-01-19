@@ -28,6 +28,9 @@ class ScoreViewController: UIViewController {
     @IBOutlet weak var homeTeamScoreLabel: UILabel!
     @IBOutlet weak var awayTeamScoreLabel: UILabel!
     
+    var homeTeam = ""
+    var awayTeam = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         homeScoreStepper.enabled = false
@@ -38,8 +41,8 @@ class ScoreViewController: UIViewController {
         disableScoreChangeButton.hidden = true
         
         //set the labels to the name of the home team and away team
-        homeTeamLabel.text = "home team"
-        awayTeamLabel.text = "away team"
+        homeTeamLabel.text = homeTeam
+        awayTeamLabel.text = awayTeam
     }
     
     @IBAction func doneChangingScore(sender: AnyObject) {

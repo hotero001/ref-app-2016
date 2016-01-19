@@ -315,5 +315,16 @@ class JournalEntryViewController: UITableViewController {
           awayRedLabel.text = "\(awayReds)"
       }
   }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!){
+        let nextVC = segue.destinationViewController as! ScoreViewController
+                
+        nextVC.homeTeam = homeTeamTextField.text!
+        nextVC.awayTeam = awayTeamTextField.text!
+    }
+    
 }
+
+
+
 
